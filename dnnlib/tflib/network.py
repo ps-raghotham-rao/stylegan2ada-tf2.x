@@ -8,7 +8,8 @@ import uuid
 import sys
 import copy
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 from collections import OrderedDict
 from typing import Any, List, Tuple, Union, Callable
